@@ -1,0 +1,23 @@
+@import '../lib/_reset.scss';
+section {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #e6e6e6;
+    align-items: center;
+    .main {
+        background-color: red;
+        flex: 1;
+    }
+}
+@media screen and (max-width: 480px) {
+    section {
+        .main {
+            flex: none;
+            width: 50%;
+            div {
+                background: white;
+                margin: 20px;
+            }
+        }
+    }
+}

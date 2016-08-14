@@ -1,0 +1,23 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #e6e6e6;
+  align-items: center; }
+  section .main {
+    background-color: red;
+    flex: 1; }
+
+@media screen and (max-width: 480px) {
+  section .main {
+    flex: none;
+    width: 50%; }
+    section .main div {
+      background: white;
+      margin: 20px; } }
