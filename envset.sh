@@ -11,12 +11,14 @@ cd ..
 cd view
 touch index.html
 
+# set config
 apm install editorconfig
+# install npm
 brew install node
 npm init
 npm install -D node-sass nodemon
-npm install -g browser-sync gulp gulp-sass
-touch gulpfile.js
+sudo npm install -g browser-sync gulp gulp-sass
+npm install browser-sync gulp gulp-sass --save-dev
 touch .gitignore
 echo -e "# Dependency directories \n
 node_modules \n
