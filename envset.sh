@@ -13,12 +13,14 @@ touch index.html
 
 # set config
 apm install editorconfig
+# install brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # install npm
 brew install node
 npm init
 npm install -D node-sass nodemon
 sudo npm install -g browser-sync gulp gulp-sass
-npm install browser-sync gulp gulp-sass --save-dev
+npm install browser-sync gulp gulp-sass gulp-notify --save-dev
 touch .gitignore
 echo -e "# Dependency directories \n
 node_modules \n

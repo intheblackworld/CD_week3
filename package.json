@@ -7,13 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss app/css/page/index.scss   app/css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "dev": "browser-sync start --server 'app' --files 'app' \"npm run watch-css\" "
+    "dev": "browser-sync start --server 'app' --files 'app'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-file-include": "^0.14.0",
+    "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.3.2"
   }
 }
